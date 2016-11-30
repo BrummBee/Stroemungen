@@ -19,7 +19,7 @@
 \hspace*{0.05\textwidth} % Whitespace between the vertical line and title page text
 \parbox[b]{0.75\textwidth}{ % Paragraph box which restricts text to less than the width of the page
 
-{\noindent\Huge\bfseries 3 Kennlinien \\[0.5\baselineskip] elekrtischer Leiter}\\[2\baselineskip] % Title
+{\noindent\Huge\bfseries 4 Strömungen \\[0.5\baselineskip]}\\[2\baselineskip] % Title
 {\large \textit{24. November 2016}}\\[4\baselineskip] % Tagline or further description
 {\Large \textsc{Lukas Bühler, Jérôme Landtwing (M4a)}} % Author name
 
@@ -29,15 +29,93 @@
 \endgroup}
 
 \begin{document}
-
-\pagestyle{empty} % Removes page numbers
+\thispagestyle{empty}
 \titleGM % This command includes the title page
+\tableofcontents \newpage
+In diesem Praktikum ging es darum Strömungen kennen zu lernen und die Prinzipien der Strömungslehre zu erarbeiten. Dabei werden die BERNOULLI-Gleichung, die innere Reibung bei laminaren Strömungen und der Luftwiderstand bei turbulenten Strömungen näher angeschaut.
+\section{Theorie}
+In der Strömungslehre spielt die Beweglichkeit der Teilchen eine grosse Rolle. Jedes Teilchen in einer Strömung hat normalerweise eine andere Geschwindigkeit und zur Beschreibung der Strömung muss man das Geschwindigkeitsvektorfeld kennen.
+Man unterscheidet zwischen stationären und nicht-stationären Strömungen. Stationäre Strömungen haben am einem Punkt in ihrem Geschwindigkeitsvektorfeld stets den selben Vektor. Das bedeutet, dass Teilchen, welche durch diesen Punkt strömen immer gleich schnell sind. So kann der Beobachter keinen Unterschied erkennen, auch wenn immer neue Teilchen den Punkt passieren.
+Man kann Strömungen auch durch Stromlinien darstellen, diese geben den Weg der Teilchen an. Geschwindigkeitsvektoren sind die Tangenten der Stromlinien. 
+Ebenfalls von Bedeutung für dieses Praktikum sind Stromfäden. Ein Stromfaden beschreibt den Weg einer Strömung und das durchflossene Volumen. Man nimmt an man hat eine Fläche $A_1$, durch welche die Strömung in einen Gang strömt und die Geschwindigkeit $v_1$ der Strömung, mit welcher sie durch $A_1$  fliesst. Nun kommt die Strömung am anderen Ende des Ganges wieder raus mit einer Fläche von $A_2$ und einer Geschwindigkeit $v_2$. Wenn die Dichte des Fluides, also des Gases oder der Flüssigkeit, nicht ändert, das heisst dieses inkompressibel ist, hat der Stromfaden auch stets dasselbe Volumen.
+Es gilt: \begin{equation} A_1 \cdot v_1 = A_2 \cdot v_2 \end{equation}
+Dies ist die \textbf{Kontinuitätsgleichung}. Sie beschreibt, dass bei kleineren Durchflussflächen die Strömung schneller sein muss und bei grösseren Flächen kleiner. Mit anderen Worten je näher die Stromlinien beisammen sind, desto schneller ist die Strömung. \\ \\
+Die BERNOULLI-Gleichung ist ein weiterer Bestandteil der Strömungslehre. Sie besagt je grösser die Geschwindigkeit, desto kleiner der Druck.  (Hier langweiliger Teil über BERNOLLI-Gleichung einfügen)
+\begin{equation} p_1 + p\cdot g\cdot h_1 + \frac{1}{2}\rho = p_2 + p\cdot g\cdot h_2 + \frac{1}{2} \rho \cdot v_2^2 \end{equation}
+Wobei p für den Druch, $\rho$ für die Dichte, $g$ für die Fallbeschleunigung, $h$ für die Höhe und $v$ für die Geschwindigkeit steht. Bei ungefähr gleicher Höhe kann man dann sagen, dass mit zunehmender Geschwindigkeit der Druck abnimmt.
+\\ \\ Wieso fliegen eigentlich Flugzeuge? Auch dies hat mit Strömungslehre zu tun und zwar mit dem dynamischen Auftrieb. Es gibt auch statischen Auftrieb, welcher sich Ballone und Zeppeline zu nutzen machen. Der Trick des dynamischen Auftriebs liegt im Flügelprofil. Dieses ist so gebaut, dass es oben eine leichte Wölbung hat und unten Flach ist. Nun hat die Luft oberhalb des Flügels weniger Platz, also muss sie folglich schneller strömen. Da die Luft aber schneller Strömt, nimmt der Druck oberhalb des Flügels ab und es entsteht ein Unterdruckgebiet. Unter dem Flügel strömt die Luft nicht schneller, also herrscht dort im Vergleich zu oben ein Überdruckgebiet. Die Luft möchte nun von unterhalb des Flügels zum Überdruckgebiet oberhalb des Flügels und wirkt deshalb eine Kraft auf den Flügel aus. Diese Kraft ist der Auftrieb, welche Flugzeuge, sowie auch Vögel fliegen lässt.
+\\ \\ Ein anderer Effekt ist der MAGNUS-Effekt.
+Er beschreibt die Reibung einer Strömung ein einem Körper. Veranschaulicht werden kann dieser Effekt mit einem rotierenden Zylinder. Der Zylinder erzeugt mit seiner Rauigkeit durch seine Rotation eine Zirkulationsströmung um sich herum. Befindet sich der Zylinder nun in einer Strömung, so beeinflusst er die Strömung und lenkt diese ab.
+\\ \\ In der Strömungslehre unterscheidet man zudem zwei Arten von Strömungen. Die Laminare Strömung und die turbulente Strömung. Eine laminare Strömung ist gleichmässig und wohlgeordnet und eine turbulente Strömung dagegen verwirbelt.
+\\ \\ Weil Strömungen mit dem ganzen Volumen Reibung erfahren an Körpern, spricht man von innerer Reibung. Wenn eine Strömung innere Reibung hat, es sich aber keine Wirbel bilden, nennt man laminar. Diese laminaren Strömungen lassen sich durch Stromfäden beschreiben.
+\\ \\ Man kann sich zwei Platten mit Flüssigkeit dazwischen vorstellen. Um die Platten zu bewegen muss eine gewisse Kraft aufgewendet werden. Was man beobachten wird, ist, dass die Flüssigkeit auseinandergezogen wird. Die Teilchen haften an der oberen, sowie auch an der unteren Platte und die Flüssigkeit zieht es in die Länge.
+\\ Newton beschrieb diese Phänomen so:
+\begin{equation} F_R = \eta \cdot A \frac{\triangle v}{\triangle d} = \eta \cdot A \frac{v_0}{d}\end{equation}
+$\frac{v_0}{d}$ und $\frac{\triangle v}{\triangle d}$ ist das Geschwindigkeitsgefälle. Er sagte, dass die Reibungskraft ($F_R$) proportional zur Fläche $A$ der Flüssigkeit zwischen den Platten und proportional zum Geschwindigkeitsgefälle sei. Das eta ($\eta$) ist die Viskosität der Flüssigkeit. Viskosität kann umgangssprachlich als Zähigkeit bezeichnet werden, sie ist ausserdem stark temperaturabhängig. Die Einheit der Viskosität ist $Nsm^{-2} = kg*m^{-1}s^{-1}$. Man unterscheidet ausserdem noch plastische Substanzen, wie zum Beispiel Zahnpasta und Schokolade, welche erst unter grossen Kräften Flüssig werden und dessen Viskosität einen Sprung macht.
+\\ \\ Turbulente Strömungen entstehen, sobald man die Geschwindigkeiten genug erhöht. Es entstehen Wirbel, man spricht nicht mehr von einer stationären Strömung. Die Geschwindigkeit, bei welcher die Strömung turbulent wird, muss für jeden Fall einzeln ermittelt werden. Nun spricht man nicht mehr von Reibungswiderstand wie in einer Laminaren Strömung, sondern vom Druckwiderstand oder Strömungswiderstand.
+\\ \\ Der Strömungswiderstand beschreibt die Kraft, welche auf einen Körper wirkt, um welchen ein Medium strömt. Das Medium wirkt diese Kraft auf den Körper aus. Man unterscheidet die Fälle des Strömungswiderstandes in einer laminaren und einer turbulenten Strömung. In einer laminaren Strömung ist der Strömungswiderstand: \begin{equation} F_R = 6 \cdot \pi \cdot \eta \cdot R \cdot v \end{equation}
+$F_R$ beschreibt den Strömungswiderstand, $\eta$ ist die Viskosität, R der Kugelradius und v die Umströmgeschwindigkeit des Körpers. 
+\\  In einer turbulenten Strömung sieht der Strömungswiderstand so aus:  \begin{equation} F_W = \frac{1}{2} \cdot c_W \cdot \rho \cdot A \cdot v^2 \end{equation}
+$c_W $ist der Strömungswiderstandskoeffizient, oder auch Widerstandsbeiwert genannt, er beschreibt die Form des Körpers und die Windschlüpfrigkeit dessen. $A$ ist die Angriffsfläche, auch Hauptquerschnitt genannt und beschreibt die Fläche, auf welche der Luft direkt ausgesetzt ist. 
+Unterschiedlich geformte Körper bedeuten auch unterschiedliche $c_W$-Werte, tropfenförmige Körper haben dabei die kleinsten $c_W$-Werte, sind also am windschlüpfrigsten. 
+\\ 
+Das Fallen einer Kugel in einem Medium ist auch von Bedeutung für dieses Praktikum und kann durch diese Formel beschrieben werden: \begin{equation} v = \frac{2(\rho_{Kugel} - \rho_{Medium}) \cdot g}{9\eta} \cdot R^2 \end{equation}
+\section{Grundprogramm:} 
+\subsection{Anwendung der BERNOULLI-Gleichung}
+\subsubsection{Kupferplatten}
+\subsubsection{Filterpapier in Trichter}
+\subsubsection{Papierrolle}
+\subsubsection{Föhn und Pingpong Ball}
 
-\section{Einführung}
-Welche Geschwindigkeit erhält somit ein in Luft fallender Regentropfen von 1mm Radius bei 20$^\circ C$? Ist die Strömung turbulent oder laminar?
+\subsection{Anwendung der BERNOULLI-Gleichung}
+\subsubsection{Aufbau}
+\subsubsection{Erkenntnisse und Beobachtungen}
+%%%------------
+%
+%
+%-------------------
+\section{Wahlversuche}
+\subsection{In Luft fallende Kegel}
+
+\subsubsection{Aufbau}
+Wir massen erst nach einer Fallhöhe von 5dm, wir denken, dass diese Strecke lang genug ist, dass der Papierkegel seine konstante Fallgeschwindigkeit erreicht hat.
+\subsubsection{Ergebnisse}
+Wie wir erwartet haben, stieg die konstante Fallgeschwindigkeit mit zunehmendem Gewicht. Laut unseren Messungen dürfte die Zunahme linear geschehen. Wir haben für die Steigung der Gerade den Wert $0.922478$ berechnet.
+
+
 \begin{figure}[!h]
 \centering
-\includegraphics{m4a_psPraktikum_stroemungen_Kegeldiagramm}
+\includegraphics{KegelFall}
 \caption{Unsere Messwerte, dargestellt in einer Grafik}
 \end{figure}
+\subsubsection{Diskussion}
+
+\subsection{Fallende Glasperlen in Glyzerin}
+\subsubsection{Aufbau}
+\subsubsection{Ergebnisse}
+
+\begin{figure}
+\centering
+\includegraphics{PerleGlycerin}
+\caption{Fehlerschranke 4\%}
+\end{figure}
+\subsubsection{Diskussion}
+
+\subsection{Fallende Glasperlen in Wasser}
+\subsubsection{Aufbau}
+\subsubsection{Ergebnisse}
+\begin{figure}
+\centering
+\includegraphics{PerleWasser}
+\caption{Fehlerschranke 4\%}
+\end{figure}
+\subsubsection{Diskussion}
+
+
+
+
+
+%%
+Welche Geschwindigkeit erhält somit ein in Luft fallender Regentropfen von 1mm Radius bei 20$^\circ C$? Ist die Strömung turbulent oder laminar?
+
 \end{document}
