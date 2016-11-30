@@ -4,6 +4,7 @@
 \usepackage{amsmath} 	%mathematische Formeln
 \usepackage{graphicx}	%Grafiken importieren
 \usepackage{float} %Grafiken fixieren
+\usepackage{color}
 
 
 
@@ -42,7 +43,7 @@ Es gilt: \begin{equation} A_1 \cdot v_1 = A_2 \cdot v_2 \end{equation}
 Dies ist die \textbf{Kontinuitätsgleichung}. Sie beschreibt, dass bei kleineren Durchflussflächen die Strömung schneller sein muss und bei grösseren Flächen kleiner. Mit anderen Worten je näher die Stromlinien beisammen sind, desto schneller ist die Strömung. \\ \\
 Die BERNOULLI-Gleichung ist ein weiterer Bestandteil der Strömungslehre. Sie besagt je grösser die Geschwindigkeit, desto kleiner der Druck.  (Hier langweiliger Teil über BERNOLLI-Gleichung einfügen)
 \begin{equation} p_1 + p\cdot g\cdot h_1 + \frac{1}{2}\rho = p_2 + p\cdot g\cdot h_2 + \frac{1}{2} \rho \cdot v_2^2 \end{equation}
-Wobei p für den Druch, $\rho$ für die Dichte, $g$ für die Fallbeschleunigung, $h$ für die Höhe und $v$ für die Geschwindigkeit steht. Bei ungefähr gleicher Höhe kann man dann sagen, dass mit zunehmender Geschwindigkeit der Druck abnimmt.
+Wobei p für den Druck, $\rho$ für die Dichte, $g$ für die Fallbeschleunigung, $h$ für die Höhe und $v$ für die Geschwindigkeit steht. Bei ungefähr gleicher Höhe kann man dann sagen, dass mit zunehmender Geschwindigkeit der Druck abnimmt.
 \\ \\ Wieso fliegen eigentlich Flugzeuge? Auch dies hat mit Strömungslehre zu tun und zwar mit dem dynamischen Auftrieb. Es gibt auch statischen Auftrieb, welcher sich Ballone und Zeppeline zu nutzen machen. Der Trick des dynamischen Auftriebs liegt im Flügelprofil. Dieses ist so gebaut, dass es oben eine leichte Wölbung hat und unten Flach ist. Nun hat die Luft oberhalb des Flügels weniger Platz, also muss sie folglich schneller strömen. Da die Luft aber schneller Strömt, nimmt der Druck oberhalb des Flügels ab und es entsteht ein Unterdruckgebiet. Unter dem Flügel strömt die Luft nicht schneller, also herrscht dort im Vergleich zu oben ein Überdruckgebiet. Die Luft möchte nun von unterhalb des Flügels zum Überdruckgebiet oberhalb des Flügels und wirkt deshalb eine Kraft auf den Flügel aus. Diese Kraft ist der Auftrieb, welche Flugzeuge, sowie auch Vögel fliegen lässt.
 \\ \\ Ein anderer Effekt ist der MAGNUS-Effekt.
 Er beschreibt die Reibung einer Strömung ein einem Körper. Veranschaulicht werden kann dieser Effekt mit einem rotierenden Zylinder. Der Zylinder erzeugt mit seiner Rauigkeit durch seine Rotation eine Zirkulationsströmung um sich herum. Befindet sich der Zylinder nun in einer Strömung, so beeinflusst er die Strömung und lenkt diese ab.
@@ -55,33 +56,75 @@ $\frac{v_0}{d}$ und $\frac{\triangle v}{\triangle d}$ ist das Geschwindigkeitsge
 \\ \\ Turbulente Strömungen entstehen, sobald man die Geschwindigkeiten genug erhöht. Es entstehen Wirbel, man spricht nicht mehr von einer stationären Strömung. Die Geschwindigkeit, bei welcher die Strömung turbulent wird, muss für jeden Fall einzeln ermittelt werden. Nun spricht man nicht mehr von Reibungswiderstand wie in einer Laminaren Strömung, sondern vom Druckwiderstand oder Strömungswiderstand.
 \\ \\ Der Strömungswiderstand beschreibt die Kraft, welche auf einen Körper wirkt, um welchen ein Medium strömt. Das Medium wirkt diese Kraft auf den Körper aus. Man unterscheidet die Fälle des Strömungswiderstandes in einer laminaren und einer turbulenten Strömung. In einer laminaren Strömung ist der Strömungswiderstand: \begin{equation} F_R = 6 \cdot \pi \cdot \eta \cdot R \cdot v \end{equation}
 $F_R$ beschreibt den Strömungswiderstand, $\eta$ ist die Viskosität, R der Kugelradius und v die Umströmgeschwindigkeit des Körpers. 
-\\  In einer turbulenten Strömung sieht der Strömungswiderstand so aus:  \begin{equation} F_W = \frac{1}{2} \cdot c_W \cdot \rho \cdot A \cdot v^2 \end{equation}
+\\  In einer turbulenten Strömung sieht der Strömungswiderstand so aus:  \begin{equation}\label{cwgleichung} F_W = \frac{1}{2} \cdot c_W \cdot \rho \cdot A \cdot v^2 \end{equation}
 $c_W $ist der Strömungswiderstandskoeffizient, oder auch Widerstandsbeiwert genannt, er beschreibt die Form des Körpers und die Windschlüpfrigkeit dessen. $A$ ist die Angriffsfläche, auch Hauptquerschnitt genannt und beschreibt die Fläche, auf welche der Luft direkt ausgesetzt ist. 
 Unterschiedlich geformte Körper bedeuten auch unterschiedliche $c_W$-Werte, tropfenförmige Körper haben dabei die kleinsten $c_W$-Werte, sind also am windschlüpfrigsten. 
 \\ 
 Das Fallen einer Kugel in einem Medium ist auch von Bedeutung für dieses Praktikum und kann durch diese Formel beschrieben werden: \begin{equation} v = \frac{2(\rho_{Kugel} - \rho_{Medium}) \cdot g}{9\eta} \cdot R^2 \end{equation}
-\section{Grundprogramm:} 
+%----
+%
+%
+%----
+\section{Grundprogramm:}
+Welche Geschwindigkeit erhält somit ein in Luft fallender Regentropfen von 1mm Radius bei 20$^\circ C$? Ist die Strömung turbulent oder laminar? \\ Folgendes haben wir uns zu diesem Beispiel überlegt: Die Strömung ist unserer Meinung nach turbulent, da der Regentropfen, trotz seiner geringen Masse eine hohe Geschwindigkeit erreicht. Wir wenden die Formel für turbulente Strömungen an (Formel \ref{cwgleichung}) und setzen die Werte ein. Für die Luftdichte $\rho$ bei Raumtemperatur verwendeten wir den Wert $1.204\frac{kg}{m^3}$, die Dichte von Wasser $998.20\frac{kg}{m^3}$. Für den $c_W$-Wert eines Tropfens, aus dem Dossier entnommen, verwenden wir 0.04. Den Radius des Tropfens entnahmen wir der Aufgabenstellung. $R = 0.001m$. \begin{equation} v = \sqrt{\frac{8 \cdot (\rho_{Kugel} - \rho_{Medium}) \cdot g \cdot R}{3 \cdot c_W \cdot \rho_{Medium}}} \end{equation} Eingesetzt mit Zahlen errechneten wir, eine Geschwindigkeit von: $23.3\frac{m}{s}$
+ 
 \subsection{Anwendung der BERNOULLI-Gleichung}
-\subsubsection{Kupferplatten}
-\subsubsection{Filterpapier in Trichter}
-\subsubsection{Papierrolle}
-\subsubsection{Föhn und Pingpong Ball}
+\subsubsection{Kupferplatten}Zuerst war es die Aufgabe zwei Kupferplatten nahe zusammen halten, aber einen kleinen Spalt zwischen ihnen zu lassen. Nun blies man in den Spalt zwischen den Kupferplatten und schaute was passierte. Die Kupferplatten wurden von einer Kraft zu einander gezogen. Der Spalt verkleinerte sich und die Kraft war deutlich spürbar. Diese Kraft, welche man bemerkte hatte mit der BERNOULLI-Gleichung zu tun. Und zwar gab es durch das hereinpusten in den Spalt eine Strömung mit einer gewissen Geschwindigkeit. Weil die Luft dort schneller war, als ausserhalb der Kupferplatten, sank der Druck innerhalb der Kupferplatten im Vergleich zum Luftdruck ausserhalb. Die Kraft ist die Kraft, welche wirkt um den Druck auszugleichen. 
 
-\subsection{Anwendung der BERNOULLI-Gleichung}
-\subsubsection{Aufbau}
-\subsubsection{Erkenntnisse und Beobachtungen}
+\subsubsection{Filterpapier in Trichter} Der Nächste Teilversuch bestand aus einem Kaffeefilterpapier in einem Trichter. Am unteren Ende des Trichters war ein Schlauch angebracht, durch welchen man hineinblasen musste. Ohne hineinzupusten ruhte der Filter im Trichter. Sobald man jedoch hinein blies, hob sich der Filter in dem Trichter um ungefähr einen halben Zentimeter an und schwebte dann an dieser Stelle. Was man beobachten konnte war das Gleichgewicht der Luftwiderstandskraft und der Druckkraft. Da die Luft an den Trichter strömte, wurde dieser nach oben gedrückt, doch dann herrscht ebenfalls Unterdruck um den Trichter, da die Luft schneller strömt als in dem Trichter. Deshalb hob sich der Trichter an, bis die zwei Kräfte gleich gross waren und blieb dann an Ort und Stelle
+
+\subsubsection{Papierrolle}Man bastelte eine Papierrolle und liess sie eine schiefe Ebene hinunter Rollen. Diese schiefe Ebene endet abrupt vor einem Abgrund, an welcher die Rolle dann hinunter fiel. Aufgebaut wurde der Versuch mit einem angehobenen Holzbrett, welches dann an der Tischkante endete und fixiert wurde. Die Ergebnisse waren Verblüffend, die Papierrolle rollte bis zum Abgrund und von dem Zeitpunkt an, von welchem sie im freien Fall war, flog die Papierrolle wieder zurück in Richtung des Tisches. Dies lässt sich mit dem MAGNUS-Effekt erklären. Durch die Rotation der Rolle und deren Reibung in der Luft, erfährt sie eine Reibungskraft, welche sie wieder in die Gegenrichtung zieht.
+
+\subsubsection{Föhn und Pingpong Ball}
+In dem nächsten Teilversuch wurde ein Pingpongball durch einen Föhn zum Schweben gebracht. Wieder wurde der Föhn durch den Luftwiderstand in der Luft gehalten. Man konnte den Föhn jedoch auch zur Seite neigen und der Pingpongball blieb im Strahl des Föhns bis zu zirka einem Winkel von 45 Grad. Dies Lässt sich wieder durch die BERNOULLI-Gleichung erklären, da die Druckausgleichskräfte den Pingpongball in der Luft halten.
+
+
+\subsection{Versuche mit dem Stromfadengerät}Nun ging es an das Stromfadengerät mit welchem wir die Strömung um Formen unter die Lupe nehmen konnten. Man kann mit dem Stromfadengerät genau den Lauf der Strömung nachverfolgen und sogar Stromlinien erkennen.
+\subsubsection{Aufbau}Es funktionierte so, dass man mit einem Wasserfluss eine Strömung erzeugte und diese durch einen flachen, engen Glasquader musste. In diesen Glasquader konnte man Formen hinein tun um den Fluss des Wassers und somit die Strömung abzulenken. Diese Strömung wurde mit Kaliumpermanganat eingefärbt.
+\begin{figure}[!h]
+\centering
+\includegraphics[height =5cm, angle = -90]{Versuchsaufbau.JPG}
+\caption{So sah das Stromfadenmessgerät aus}
+\end{figure}
+
+\subsubsection{Erkenntnisse und Beobachtungen} Wir konnten die Strömung mit Hilfe des Stromfadenmessgerätes sehr schön visualisieren. Je nach Körper und Stärke der Strömung ergaben sich verschiedene Strömungsbilder.
+\begin{figure}[!h]
+\centering
+\includegraphics[height =5cm, angle = -90]{Kreis_Quadrat.JPG}
+\caption{Strömungslinien eines Kreises und Quadrates nebeneinander}
+\end{figure}
+\begin{figure}[!h]
+\centering
+\includegraphics[height =5cm, angle = -90]{Fluegel.JPG}
+\caption{Strömungslinien eines Flügels}
+\end{figure}
 %%%------------
 %
 %
 %-------------------
+\newpage
 \section{Wahlversuche}
-\subsection{In Luft fallende Kegel}
+\subsection{In Luft fallende Kegel}Bei den Kegeln im freien Fall wurde der Strömungswiderstand in einer turbulenten Strömung untersucht. Das Ziel war es den $c_W$-Wert der Kegel zu bestimmen.
 
-\subsubsection{Aufbau}
-Wir massen erst nach einer Fallhöhe von 5dm, wir denken, dass diese Strecke lang genug ist, dass der Papierkegel seine konstante Fallgeschwindigkeit erreicht hat.
+
+\subsubsection{Aufbau}Der Versuchsaufbau bestand aus einem Holzstab mit Messmarkierungen, welche zwei Meter auseinander waren. Man musste nun die Kegel ein bisschen vor der Markierung loslassen und die Zeit messen, welche die Kegel brauchten um von der oberen Markierung bis zur unteren Markierung zu gelangen. 
 \subsubsection{Ergebnisse}
-Wie wir erwartet haben, stieg die konstante Fallgeschwindigkeit mit zunehmendem Gewicht. Laut unseren Messungen dürfte die Zunahme linear geschehen. Wir haben für die Steigung der Gerade den Wert $0.922478$ berechnet.
-
+Wie wir erwartet haben, stieg die konstante Fallgeschwindigkeit mit zunehmender Masse. Die Zunahme der Fallgeschwindigkeit ist, laut Theorie, proportional zur Masse des fallenden Körper. Wir haben für die optimale Steigung der Gerade den Wert $0.92$ berechnet. Dieser Wert sollte auch mit dem $c_W$-Wert übereinstimmen. Diesen experimentell ermittelten Wert wollen wir überprüfen, indem wir den $c_W$-Wert mit gegebenen Formeln berechnen. Wir benutzen dazu Formel \ref{cwgleichung} und lösen diese nach dem $c_W$-Wert auf:
+\begin{equation} c_W = \frac{2 \cdot F_W}{\rho \cdot A \cdot v^2} \end{equation}
+Da sich bei konstanter Fallgeschwindigkeit ein Gleichgewicht zwischen  $F_W$ und $F_G$ einstellt, kann $F_W$ durch $F_G = m\cdot g$ ersetzt werden. Folglich erhalten wir die folgende Formel, um den $c_W$-Wert zu berechnen:
+\begin{equation} c_W = \frac{2 \cdot m \cdot g}{\rho \cdot A \cdot v^2} \end{equation}
+Die Papierkegel besassen einen Durchmesser von 16.0cm, also eine Querschnittsfläche ($A$) von $201.0cm^2$. Den Wert der Dichte bestimmten wir mit Hilfe der Zimmertemperatur, welche $(23±0.5)°C$ Betrug. Die Luftdichte $\rho$ war also 1.184$\frac{kg}{m^3}$
+Wir setzten all unsere Messwerte in obige Formel ein und erhielten den Wert $c_w = (0.81±0.1)$
+\begin{table}[!h]
+\centering
+\begin{tabular}{c | c | c | c | c | c | c}
+Anzahl Kegel 	& 1 		& 2 		& 3 		& 4		&	Einheit	& mittlere Fehlerabweichung 	\\ \hline
+	Masse	& 0.95 	& 1.89 	& 2.91	& 4.8 	& 	[g]		&	$±0.005$g\\	
+mittlere Fallzeit & 2.13	& 1.45	& 1.22	& 0.96	&	[s]		&	$±0.2$s\\	
+Geschwindigkeit & 	0.94 & 1.38	&1.64	& 2.08	&	[$\frac{m}{s}$]		&	$±0.1\frac{m}{s}$ \\
+\end{tabular}
+\caption{unsere Messwerte für in Luft fallende Kegel}
+\end{table}
 
 \begin{figure}[!h]
 \centering
@@ -89,10 +132,27 @@ Wie wir erwartet haben, stieg die konstante Fallgeschwindigkeit mit zunehmendem 
 \caption{Unsere Messwerte, dargestellt in einer Grafik}
 \end{figure}
 \subsubsection{Diskussion}
+Vergleicht man den experimentell bestimmten $c_W$-Wert mit dem mit Hilfe der Formel errechneten, so fällt auf dass die beiden dennoch eine beachtliche Differenz aufweisen. Wir erklären uns diesen Unterschied damit, dass wir die Luftdichte $\rho$ nicht direkt gemessen haben, sondern mit Hilfe der Umgebungstemperatur errechnet haben.
+\newpage
+%%
+\subsection{Fallende Glasperlchen in Glyzerin}Beim letzten Versuch in diesem Praktikum ging es darum die Dichte und die Viskosität des Mediums zu bestimmen. 
+\subsubsection{Aufbau}Dazu wurden Glasperlen mit einer bestimmten Masse und Geometrie in einen Zylinder mit dem Medium getan und die Zeit zwischen zwei Markierungen am Zylinder gemessen, welche die Perle brauchte um sie zu passieren. Der Abstand zwischen den Markierungen betrug genau einen Meter. Der eine Zylinder war mit Glyzerin gefüllt, der andere mit Wasser. Es wurden nun in mehreren Messreihen mit verschiedenen Glasperlen die Zeit und Geschwindigkeit bestimmt um die benötigten Werte zu berechnen.
 
-\subsection{Fallende Glasperlen in Glyzerin}
-\subsubsection{Aufbau}
 \subsubsection{Ergebnisse}
+Die folgende Formel benutzten wir, um die Viskosität $\eta$ von Glyzerin zu berechnen. \begin{equation} \eta = \frac{2(\rho_{Kugel} - \rho_{Medium})\cdot g \cdot R^2}{9 \cdot v} \end{equation}
+Als wir die Zahlenwerte: $\rho_{Kugel} = ?? , \rho_{Medium} = 1.26\cdot 10^3kg\cdot m^{-3} , g = 9.81\frac{m}{s^2}, R = 0.002m, v = 0.0530\frac{m}{s}$ einsetzen wollten, fiel uns auf, dass wir vergessen haben die Masse der Kugel zu bestimmen. Dadurch war es uns nicht möglich ihre Dichte auszurechnen und somit können wir auch keinen Wert für die Viskotsität von Glyzerin  angeben.
+
+\begin{table}[H]
+\centering
+%Glasperle in Glycerin
+\begin{tabular}{c | c | c | c | c | c | c | c }
+				&		&		&		&		&		& Einheit & mittlere Fehlerabweichung \\
+Kugelradius 		& 1 		& 1.5		& 2 		& 2.5		&	4	&  [$10^{-3}$m]	& $±0.1\cdot 10^{-3}$m\\ 
+mittlere Fallzeit		& 70.243	&29.56	& 18.866	&12.453	&	6.72	&	[s]	&	$±0.2$s\\	
+Geschwindigkeit 	& 0.01423	&0.03382	&0.0530	&0.08029	&0.14866 &	[$\frac{m}{s}$]	&	$±0.1\frac{m}{s}$ \\
+\end{tabular}
+\caption{unsere Messwerte des Versuchs \emph{Fallende Glasperlchen in Glyzerin}}
+\end{table}
 
 \begin{figure}
 \centering
@@ -100,10 +160,25 @@ Wie wir erwartet haben, stieg die konstante Fallgeschwindigkeit mit zunehmendem 
 \caption{Fehlerschranke 4\%}
 \end{figure}
 \subsubsection{Diskussion}
+Es wäre die Idee gewesen, dass wir die Dichte der Glasperlchen selbst berechnen. Jedoch vergassen wir, die Masse der Kugel zu bestimmen. Mit Hilfe der Masse, und des Kugelradius (war uns bekannt) hätte man die Dichte mit der Formel $\frac{Masse}{Volumen}$ bestimmen können. Da wir jedoch keine Angabe für die Masse unserer Glasperlchen hatten, konnten wir diesen Wert nicht berechnen.\\ 
+Der letzte Messwert passt nicht mit den anderen überein und liegt nicht auf der selben Gerade. Wir gehen davon aus, dass dieser Wert nicht genau stimmt. Dieser Messfehler könnte dadurch entstanden sein, dass wir die Glasperlchen nicht immer von der gleichen Höhe aus ins Wasser fallen liessen. Je grösser die Kugeln wurden, desto mehr von ihnen sanken am Rand des Zylinders zu Boden und eckten daran an. Um dies zu verhindern, liessen wir die Perlchen immer unmittelbarer über der Wasseroberfläche in den Zylinder fallen. Somit besassen die Kügelchen mit kleinererem Radius bereits eine Anfangsgeschwindigkeit, hingegen die grössten Kügelchen keine. Wir erklären uns die Abweichung des letzen Messwertes damit.
 
-\subsection{Fallende Glasperlen in Wasser}
+\newpage
+\subsection{Fallende Glasperlchen in Wasser}
 \subsubsection{Aufbau}
 \subsubsection{Ergebnisse}
+\begin{table}[!h]
+\centering
+%Glasperle Wasser
+\begin{tabular}{c | c | c | c | c | c | c | c }
+				&		&		&		&		&		& Einheit & mittlere Fehlerabweichung \\
+Kugelradius 		& 1 		& 1.5		& 2 		& 2.5		&	4	&  [$10^{-3}$m]	& $±0.1\cdot 10^{-3}$m\\ 
+mittlere Fallzeit		& 4.1266	&2.94333	&2.37	&2.14666	&	1.71	&	[s]	&	$±0.2$s\\	
+Geschwindigkeit 	& 0.2423	&0.33975	&0.42194	&0.46583	&0.58479 	&	[$\frac{m}{s}$]	& $±0.1\frac{m}{s}$ \\
+\end{tabular}
+\caption{unsere Messwerte des Versuchs \emph{fallende Glasperlchen in Wasser}}
+\end{table}
+
 \begin{figure}
 \centering
 \includegraphics{PerleWasser}
@@ -114,8 +189,6 @@ Wie wir erwartet haben, stieg die konstante Fallgeschwindigkeit mit zunehmendem 
 
 
 
-
-%%
-Welche Geschwindigkeit erhält somit ein in Luft fallender Regentropfen von 1mm Radius bei 20$^\circ C$? Ist die Strömung turbulent oder laminar?
+\newpage
 
 \end{document}

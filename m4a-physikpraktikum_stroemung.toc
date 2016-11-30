@@ -1,24 +1,24 @@
 \select@language {ngerman}
 \contentsline {section}{\numberline {1}Theorie}{3}
-\contentsline {section}{\numberline {2}Grundprogramm:}{6}
+\contentsline {section}{\numberline {2}Grundprogramm:}{5}
 \contentsline {subsection}{\numberline {2.1}Anwendung der BERNOULLI-Gleichung}{6}
 \contentsline {subsubsection}{\numberline {2.1.1}Kupferplatten}{6}
 \contentsline {subsubsection}{\numberline {2.1.2}Filterpapier in Trichter}{6}
 \contentsline {subsubsection}{\numberline {2.1.3}Papierrolle}{6}
 \contentsline {subsubsection}{\numberline {2.1.4}F\"ohn und Pingpong Ball}{6}
-\contentsline {subsection}{\numberline {2.2}Anwendung der BERNOULLI-Gleichung}{6}
-\contentsline {subsubsection}{\numberline {2.2.1}Aufbau}{6}
-\contentsline {subsubsection}{\numberline {2.2.2}Erkenntnisse und Beobachtungen}{6}
-\contentsline {section}{\numberline {3}Wahlversuche}{6}
-\contentsline {subsection}{\numberline {3.1}In Luft fallende Kegel}{6}
-\contentsline {subsubsection}{\numberline {3.1.1}Aufbau}{6}
-\contentsline {subsubsection}{\numberline {3.1.2}Ergebnisse}{6}
-\contentsline {subsubsection}{\numberline {3.1.3}Diskussion}{6}
-\contentsline {subsection}{\numberline {3.2}Fallende Glasperlen in Glyzerin}{6}
-\contentsline {subsubsection}{\numberline {3.2.1}Aufbau}{6}
-\contentsline {subsubsection}{\numberline {3.2.2}Ergebnisse}{6}
-\contentsline {subsubsection}{\numberline {3.2.3}Diskussion}{6}
-\contentsline {subsection}{\numberline {3.3}Fallende Glasperlen in Wasser}{6}
-\contentsline {subsubsection}{\numberline {3.3.1}Aufbau}{6}
-\contentsline {subsubsection}{\numberline {3.3.2}Ergebnisse}{6}
-\contentsline {subsubsection}{\numberline {3.3.3}Diskussion}{6}
+\contentsline {subsection}{\numberline {2.2}Versuche mit dem Stromfadenger\"at}{7}
+\contentsline {subsubsection}{\numberline {2.2.1}Aufbau}{7}
+\contentsline {subsubsection}{\numberline {2.2.2}Erkenntnisse und Beobachtungen}{7}
+\contentsline {section}{\numberline {3}Wahlversuche}{8}
+\contentsline {subsection}{\numberline {3.1}In Luft fallende Kegel}{8}
+\contentsline {subsubsection}{\numberline {3.1.1}Aufbau}{9}
+\contentsline {subsubsection}{\numberline {3.1.2}Ergebnisse}{9}
+\contentsline {subsubsection}{\numberline {3.1.3}Diskussion}{9}
+\contentsline {subsection}{\numberline {3.2}Fallende Glasperlchen in Glyzerin}{10}
+\contentsline {subsubsection}{\numberline {3.2.1}Aufbau}{10}
+\contentsline {subsubsection}{\numberline {3.2.2}Ergebnisse}{10}
+\contentsline {subsubsection}{\numberline {3.2.3}Diskussion}{11}
+\contentsline {subsection}{\numberline {3.3}Fallende Glasperlchen in Wasser}{13}
+\contentsline {subsubsection}{\numberline {3.3.1}Aufbau}{13}
+\contentsline {subsubsection}{\numberline {3.3.2}Ergebnisse}{13}
+\contentsline {subsubsection}{\numberline {3.3.3}Diskussion}{13}
