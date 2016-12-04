@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.8.3)  1 DEC 2016 13:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.8.3)  4 DEC 2016 22:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -243,48 +243,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--34
 \openout3 = `m4a-physikpraktikum_stroemung.toc'.
 
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 42--45
+Underfull \hbox (badness 10000) in paragraph at lines 43--46
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--54
+Underfull \hbox (badness 10000) in paragraph at lines 46--55
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--54
+Underfull \hbox (badness 10000) in paragraph at lines 46--55
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--54
+Underfull \hbox (badness 10000) in paragraph at lines 46--55
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--54
+Overfull \hbox (1.47958pt too wide) in paragraph at lines 46--55
+\OT1/cmr/m/n/10 der la-mi-na-ren Str[]omung und der tur-bu-len-ten Str[]omung. 
+Ei-ne la-mi-na-re Str[]omung
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--55
 
  []
 
 
-Overfull \hbox (2.3073pt too wide) in paragraph at lines 45--54
+Overfull \hbox (2.3073pt too wide) in paragraph at lines 46--55
 \OT1/cmr/m/n/10 Weil Str[]omungen mit dem gan-zen Vo-lu-men Rei-bung er-fah-ren
  an K[]orpern, spricht
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--54
+Underfull \hbox (badness 10000) in paragraph at lines 46--55
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 54--57
+Underfull \hbox (badness 10000) in paragraph at lines 55--58
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--57
+Underfull \hbox (badness 10000) in paragraph at lines 55--58
 
  []
 
@@ -292,19 +298,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--57
 File: Versuchsaufbau.JPG Graphic file (type jpg)
 
 <use Versuchsaufbau.JPG>
-Package pdftex.def Info: Versuchsaufbau.JPG used on input line 86.
+Package pdftex.def Info: Versuchsaufbau.JPG used on input line 87.
 (pdftex.def)             Requested size: 190.4361pt x 142.26378pt.
  <Kreis_Quadrat.JPG, id=34, 2601.72pt x 1943.26pt>
 File: Kreis_Quadrat.JPG Graphic file (type jpg)
 
 <use Kreis_Quadrat.JPG>
-Package pdftex.def Info: Kreis_Quadrat.JPG used on input line 93.
+Package pdftex.def Info: Kreis_Quadrat.JPG used on input line 94.
 (pdftex.def)             Requested size: 190.4361pt x 142.26378pt.
  <Fluegel.JPG, id=35, 2601.72pt x 1943.26pt>
 File: Fluegel.JPG Graphic file (type jpg)
 
 <use Fluegel.JPG>
-Package pdftex.def Info: Fluegel.JPG used on input line 98.
+Package pdftex.def Info: Fluegel.JPG used on input line 99.
 (pdftex.def)             Requested size: 190.4361pt x 142.26378pt.
 
 
@@ -315,10 +321,10 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [7 <./Versuchsaufbau.JPG>] [8 <./Kreis_Quadrat.JPG> <./Fluegel.JPG>]
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 116.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 117.
 
 
-Overfull \hbox (27.2367pt too wide) in paragraph at lines 120--126
+Overfull \hbox (27.2367pt too wide) in paragraph at lines 121--127
  [][] 
  []
 
@@ -330,17 +336,17 @@ Package epstopdf Info: Source file: <KegelFall.eps>
 (epstopdf)                    size: 8095 bytes
 (epstopdf)             Command: <repstopdf --outfile=KegelFall-eps-converted-to
 .pdf KegelFall.eps>
-(epstopdf)             \includegraphics on input line 131.
+(epstopdf)             \includegraphics on input line 132.
 Package epstopdf Info: Output file is already uptodate.
 <KegelFall-eps-converted-to.pdf, id=43, 361.35pt x 252.945pt>
 File: KegelFall-eps-converted-to.pdf Graphic file (type pdf)
 
 <use KegelFall-eps-converted-to.pdf>
-Package pdftex.def Info: KegelFall-eps-converted-to.pdf used on input line 131.
+Package pdftex.def Info: KegelFall-eps-converted-to.pdf used on input line 132.
 
 (pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
 
-Overfull \hbox (16.34912pt too wide) in paragraph at lines 131--132
+Overfull \hbox (16.34912pt too wide) in paragraph at lines 132--133
  [][] 
  []
 
@@ -348,7 +354,7 @@ Overfull \hbox (16.34912pt too wide) in paragraph at lines 131--132
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [9]
-Overfull \hbox (4.36722pt too wide) in paragraph at lines 142--144
+Overfull \hbox (4.36722pt too wide) in paragraph at lines 143--145
 \OT1/cmr/m/n/10 Als wir die Zah-len-wer-te: $\OML/cmm/m/it/10 ^^Z[] \OT1/cmr/m/
 n/10 =??\OML/cmm/m/it/10 ; ^^Z[] \OT1/cmr/m/n/10 = 1\OML/cmm/m/it/10 :\OT1/cmr/
 m/n/10 26 \OMS/cmsy/m/n/10 ^^A \OT1/cmr/m/n/10 10[]\OML/cmm/m/it/10 kg \OMS/cms
@@ -357,7 +363,7 @@ cmr/m/n/10 81[]\OML/cmm/m/it/10 ; R \OT1/cmr/m/n/10 =
  []
 
 [10 <./KegelFall-eps-converted-to.pdf>]
-Overfull \hbox (129.83421pt too wide) in paragraph at lines 148--154
+Overfull \hbox (129.83421pt too wide) in paragraph at lines 149--155
  [][] 
  []
 
@@ -369,22 +375,22 @@ Package epstopdf Info: Source file: <PerleGlycerin.eps>
 (epstopdf)                    size: 8244 bytes
 (epstopdf)             Command: <repstopdf --outfile=PerleGlycerin-eps-converte
 d-to.pdf PerleGlycerin.eps>
-(epstopdf)             \includegraphics on input line 159.
+(epstopdf)             \includegraphics on input line 160.
 Package epstopdf Info: Output file is already uptodate.
 <PerleGlycerin-eps-converted-to.pdf, id=56, 361.35pt x 252.945pt>
 File: PerleGlycerin-eps-converted-to.pdf Graphic file (type pdf)
 
 <use PerleGlycerin-eps-converted-to.pdf>
 Package pdftex.def Info: PerleGlycerin-eps-converted-to.pdf used on input line 
-159.
+160.
 (pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
 
-Overfull \hbox (16.34912pt too wide) in paragraph at lines 159--160
+Overfull \hbox (16.34912pt too wide) in paragraph at lines 160--161
  [][] 
  []
 
 [11 <./PerleGlycerin-eps-converted-to.pdf>] [12]
-Overfull \hbox (129.83421pt too wide) in paragraph at lines 174--180
+Overfull \hbox (129.83421pt too wide) in paragraph at lines 175--181
  [][] 
  []
 
@@ -396,17 +402,17 @@ Package epstopdf Info: Source file: <PerleWasser.eps>
 (epstopdf)                    size: 8341 bytes
 (epstopdf)             Command: <repstopdf --outfile=PerleWasser-eps-converted-
 to.pdf PerleWasser.eps>
-(epstopdf)             \includegraphics on input line 186.
+(epstopdf)             \includegraphics on input line 187.
 Package epstopdf Info: Output file is already uptodate.
 <PerleWasser-eps-converted-to.pdf, id=70, 361.35pt x 252.945pt>
 File: PerleWasser-eps-converted-to.pdf Graphic file (type pdf)
 
 <use PerleWasser-eps-converted-to.pdf>
 Package pdftex.def Info: PerleWasser-eps-converted-to.pdf used on input line 18
-6.
+7.
 (pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
 
-Overfull \hbox (16.34912pt too wide) in paragraph at lines 186--187
+Overfull \hbox (16.34912pt too wide) in paragraph at lines 187--188
  [][] 
  []
 
@@ -415,7 +421,7 @@ Overfull \hbox (16.34912pt too wide) in paragraph at lines 186--187
 Here is how much of TeX's memory you used:
  2744 strings out of 493014
  37764 string characters out of 6133352
- 112228 words of memory out of 5000000
+ 113228 words of memory out of 5000000
  6233 multiletter control sequences out of 15000+600000
  7212 words of font info for 26 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -434,7 +440,7 @@ lic/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
 amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmti10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmti12.pfb>
-Output written on m4a-physikpraktikum_stroemung.pdf (14 pages, 3221212 bytes).
+Output written on m4a-physikpraktikum_stroemung.pdf (14 pages, 3221135 bytes).
 PDF statistics:
  125 PDF objects out of 1000 (max. 8388607)
  86 compressed objects within 1 object stream
